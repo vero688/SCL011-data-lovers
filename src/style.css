@@ -1,0 +1,14 @@
+@media screen and (max-width:475px){
+    #root{
+        justify-content: center;
+    }
+    .logo{
+
+        margin-left: calc(100%-180px);
+    }
+    .cards{
+
+        display: flex;
+        justify-content: center;
+    }
+}
