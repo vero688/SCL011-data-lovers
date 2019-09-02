@@ -1,0 +1,31 @@
+#logo {
+    width: 250px;
+    height: 150px;
+    margin-top: 0px;
+    margin-left: 3em;
+}
+
+.searchBar{
+
+    width: 230px;
+    height: 25px;
+    margin-top: 1%;
+    border-radius: 8px;
+
+
+}
+
+@media screen and (max-width:475px){
+    #root{
+        justify-content: center;
+    }
+    .logo{
+
+        margin-left: calc(100%-180px);
+    }
+    .cards{
+
+        display: flex;
+        justify-content: center;
+    }
+}
