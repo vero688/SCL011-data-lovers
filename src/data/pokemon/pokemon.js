@@ -4085,5 +4085,7 @@
   }]
 }
 ;;
-//aquí hacemos global el objeto POKEMON, compuesto de arrays de pokemons
+
+//Aquí creamos de manera global la variable POKEMON que vendría siendo un objeto pokemon
+//compuesto de arrays de pokemons
 window.POKEMON = POKEMON;
