@@ -1,10 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
 #logo {
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 200px;
     margin-top: 0px;
     margin-left: 3em;
 }
+#rowType{
 
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/*
 .searchBar{
 
     width: 230px;
@@ -12,10 +39,38 @@
     margin-top: 1%;
     border-radius: 8px;
 
+}*/
+
+.cards{  
+    background-color: #FAFFF9;
+    color: #4F6D67;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
+    box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
 
 }
 
+.container{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #05C877;
+    
+}
+
 @media screen and (max-width:475px){
+        /* Responsive columns */
+    .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
     #root{
         justify-content: center;
     }
@@ -23,9 +78,8 @@
 
         margin-left: calc(100%-180px);
     }
-    .cards{
 
-        display: flex;
-        justify-content: center;
+    .cards{
+        padding: 16px;
     }
 }
