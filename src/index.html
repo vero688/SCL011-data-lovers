@@ -12,22 +12,40 @@
       </a>
       <div class="topMenu">
         <div class="searchBar">
-          <input type="text" id="search" placeholder="Ingresa nombre o número para la búsqueda">
         </div>
-        <div class="selectors">
-          <label></label>
-      
+        
+        <select id="listPo" onchange="list()">
+          <option label="Tipo"></option>
+          <option value="fire" label="fuego"></option>
+          <option value="steel" label="acero"></option>
+          <option value="bug" label="bicho"></option>
+          <option value="water" label="agua"></option>
+          <option value="dragon" label="dragon"></option>
+          <option value="electric" label="electrico"></option>
+          <option value="ghost" label="fantasma"></option>
+          <option value="fairy" label="hada"></option>
+          <option value="ice" label="hielo"></option>
+          <option value="fighting" label="lucha"></option>
+          <option value="normal" label="normal"></option>
+          <option value="grass" label="planta"></option>
+          <option value="psychic" label="psiquico"></option> 
+          <option value="rock" label="roca"></option>
+          <option value="dark" label="siniestro"></option>
+          <option value="ground" label="tierra"></option>
+          <option value="poison" label="veneno"></option>
+          <option value="flying" label="volador"></option>
+          <option value=""></option>
+        </select>
         </div>
       </div>
-      
+
+      <img src="" alt="">
       
       
     </header>
-    <section>
-
-    </section>
+    
     <!--Div que contendrá las tarjetas pókemon -->
-    <div id="root"></div>
+    <div class="listRows" id="root"></div>
 
     <footer></footer>
     

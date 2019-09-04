@@ -1,3 +1,4 @@
+
 //Hicimos global la data en data/pokemon.js y aquí creamos la variable 
 //que almacenará los objetos pokemon y sus atributos.
 const pokemons = window.POKEMON.pokemon;
@@ -33,18 +34,19 @@ for(let i=0; i<pokemons.length;i++){
   //sea el tipo, será la clase que tomará (para que sean de colores distintos) y si son
   //dos tipos entones que cree dos label.
   let pokemonType = document.createElement("h1");
-  pokemonType.textContent = pokemons[0].type;
+  pokemonType.textContent = pokemons[i].type[0];
   let pokemonType2 = document.createElement("h1");
-  pokemonType2.textContent = pokemons[1].type;
+  pokemonType2.textContent = pokemons[i].type[1];
 
+    cards.appendChild(pokemonName);
+    cards.appendChild(pokemonPhoto);
+    cards.appendChild(pokemonNumber);
+    cards.appendChild(pokemonType);
+    cards.appendChild(pokemonType2);
 
-
-
-
-
-
-
-
-
+    //Mostrar tarjeta en el contenedor especificado
+    document.getElementById("root").appendChild(cards).innerHTML;   
 
 }
+
+
