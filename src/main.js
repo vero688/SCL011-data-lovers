@@ -5,6 +5,11 @@ for(let i=0; i<pokemons.length;i++){
   //Div de clase columna, cada tarjeta corresponderá a una columna dentro de la fila
   let columnCard = document.createElement("div");
   columnCard.className = "column";
+  //Crearemos una etiqueta <a> que envolverá la tarjeta, para poder llamar la apertura
+  //de un modal con href
+  /*
+  let linkModal = document.createElement("a");
+  linkModal.href = */
   //Le indicamos que cree un elemento div en nuestro HTML que contendrá toda la info
   let cards = document.createElement("div");
   //Aquí le diremos que tome la clase "cards" de css
