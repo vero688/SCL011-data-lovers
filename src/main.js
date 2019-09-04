@@ -46,14 +46,7 @@ for(let i=0; i<pokemons.length;i++){
     //Mostrar tarjeta en el contenedor especificado
     document.getElementById("root").appendChild(cards).innerHTML;   
 
-
-
-
-
-
-
-
-
-
-
 }
+
+
+

@@ -1,4 +1,4 @@
-#logo {
++#logo {
     width: 250px;
     height: 150px;
     margin-top: 0px;
@@ -24,7 +24,7 @@
         margin-left: calc(100%-180px);
     }
     .cards{
-
+        flex-flow: column;
         display: flex;
         justify-content: center;
     }

@@ -1,6 +1,2 @@
-
-/*const sortByType  = () => {
-  return 'example';
-};
-*/
-
+    const filterPoke = document.getElementById("");
+     consts
