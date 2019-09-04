@@ -1,3 +1,4 @@
+
 //Hicimos global la data en data/pokemon.js y aquí creamos la variable 
 //que almacenará los objetos pokemon y sus atributos.
 const pokemons = window.POKEMON.pokemon;
@@ -47,6 +48,5 @@ for(let i=0; i<pokemons.length;i++){
     document.getElementById("root").appendChild(cards).innerHTML;   
 
 }
-
 
 
