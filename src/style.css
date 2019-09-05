@@ -64,6 +64,19 @@ body{
 
 .container{
 
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #05C877;
+    
+}
+
+
+
+
+.container{
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -92,7 +105,6 @@ body{
         padding: 16px;
     }
 
-
 @media only screen and (min-width: 480px) and (max-width: 599px) {
 
     .column{
@@ -109,7 +121,7 @@ body{
         width: 33%;
         display: block;
         margin-bottom: 20px;
-    }
+
 }
 @media only screen and (min-width: 800px) and (max-width: 1249px) {
 
@@ -121,3 +133,13 @@ body{
     }
 }
 
+
+@media only screen and (min-width: 800px) and (max-width: 1249px) {
+
+    .column{
+
+        width: 25%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
