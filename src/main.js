@@ -67,6 +67,7 @@ for(let i=0; i<pokemons.length;i++){
 
     //Mostrar tarjeta en el contenedor especificado
     document.getElementById("root").appendChild(columnCard).innerHTML; 
+  }
 
 }
 
@@ -77,6 +78,8 @@ const selectorType = document.getElementById("filterType");
 //id "filterType" cambie de value, se ejecutará la función showByType
 selectorType.addEventListener("change", showByType);
 
+<<<<<<< HEAD
+=======
 function showByType()
 {
   //Le entregamos a la variable selectedType el valor que ha sido seleccionado desde el html
@@ -165,3 +168,4 @@ function showByType()
   }
 
 
+>>>>>>> b92c1bec346f7e77d1f7600294346e6d484a9dea

@@ -132,4 +132,27 @@ nav{
         display: block;
         margin-bottom: 20px;
     }
+<<<<<<< HEAD
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1249px) {
+
+    .column{
+
+        width: 25%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+modal.window{
+
+    position: fixed;
+    color: blanchedalmond;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s;
+=======
+>>>>>>> b92c1bec346f7e77d1f7600294346e6d484a9dea
 }
