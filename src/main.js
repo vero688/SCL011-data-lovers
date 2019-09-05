@@ -1,6 +1,6 @@
 
 //Hicimos global la data en data/pokemon.js y aquí creamos la variable 
-//que almacenará los objetos pokemon y sus atributos.
+//que almacenará los objetos pokemon y sus propiedades.
 const pokemons = window.POKEMON.pokemon;
 for(let i=0; i<pokemons.length;i++){
 
@@ -70,20 +70,36 @@ for(let i=0; i<pokemons.length;i++){
 
 }
 
+//Le entregamos a la variable selectorType el id del selector del cual obtendremos
+//el value seleccionado por el usuario
 const selectorType = document.getElementById("filterType");
+//Le agregamos un evento tipo "change", esto significa que cada vez que el elemento de 
+//id "filterType" cambie de value, se ejecutará la función showByType
 selectorType.addEventListener("change", showByType);
 
 function showByType()
 {
+  //Le entregamos a la variable selectedType el valor que ha sido seleccionado desde el html
+
   let selectedType = selectorType.options[selectorType.selectedIndex].value;
+  //Aquí decimos que en filterResult, se almacenará el resultado de la ejecución de la 
+  //función filterTypes. En este momento ya se encuentran todos los pokemons que cumplen
+  //con el criterio de filtrado
   let filterResult = window.filterTypes(pokemons, selectedType);
+  //Como la primera acción del DOM dentro de la web es mostrar todos los elementos de 
+  //pokemon.js en vista tarjetas dentro de un div, le indicamos a este que se vacíe para
+  //recibir dentro de él los resultados del filtrado
   document.getElementById("root").innerHTML="";
 
+  //Ahora como tenemos los resultados en una variable, deberemos recorrer uno a uno los pokemons
+  //para mostrarlos, del mismo modo que en el primer for donde mostramos todos los pokemons.
+  //La diferencia es que en vez de referirnos a pokemon.type,.name,.etc nos referiremos a 
+  //filterResult.name filterResult.img filterResult.number filterResult.type
   for(let i=0; i<filterResult.length; i++){
     console.log(filterResult);
       //Div de clase columna, cada tarjeta corresponderá a una columna dentro de la fila
-  let columnCard = document.createElement("div");
-  columnCard.className = "column";
+      let columnCard = document.createElement("div");
+      columnCard.className = "column";
   //Crearemos una etiqueta <a> que envolverá la tarjeta, para poder llamar la apertura
   //de un modal con href
   /*
