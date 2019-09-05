@@ -49,4 +49,22 @@ for(let i=0; i<pokemons.length;i++){
 
 }
 
+//Filtrado, muestra en CARDS
+data.filtPo
+counter.document.getElementById("list", () =>{
+  let condition =counter.options[counter.selectedIndex].value;
+  let filterPoke = filterPoke (data, condition);
+  containerRoot.innerHTML = "";
+  //console.log(filterPoke);
+  
+  filterPoke.forEach(element =>{
+    let element = element(document.getElementById("listPo"))
+    containerRoot.innerHTML +=
+  
+})
 
+
+
+
+
+})
