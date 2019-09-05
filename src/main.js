@@ -3,6 +3,16 @@
 //que almacenará los objetos pokemon y sus atributos.
 const pokemons = window.POKEMON.pokemon;
 for(let i=0; i<pokemons.length;i++){
+
+  //Div de clase columna, cada tarjeta corresponderá a una columna dentro de la fila
+  let columnCard = document.createElement("div");
+  columnCard.className = "column";
+  //Crearemos una etiqueta <a> que envolverá la tarjeta, para poder llamar la apertura
+  //de un modal con href
+  /*
+  let linkModal = document.createElement("a");
+  linkModal.href = */
+  
   //Le indicamos que cree un elemento div en nuestro HTML que contendrá toda la info
   let cards = document.createElement("div");
   //Aquí le diremos que tome la clase "cards" de css
@@ -28,43 +38,44 @@ for(let i=0; i<pokemons.length;i++){
   //En pokemon.js "num"=""  
   pokemonNumber.textContent = pokemons[i].num;
 
-
+  let rowType = document.createElement("div");
+  rowType.className = "row";
+  rowType.id = "rowType";
+  let columnType1 = document.createElement("div");
+  columnType1.className = "column";
+  let columnType2 = document.createElement("div");
+  columnType2.className = "column";
   //Tiene uno o dos tipos
   //Ideal sería hacer un if, que si tiene un tipo entonces cree un label y de acuerdo
   //sea el tipo, será la clase que tomará (para que sean de colores distintos) y si son
   //dos tipos entones que cree dos label.
-  let pokemonType = document.createElement("h1");
-  pokemonType.textContent = pokemons[i].type[0];
+  let pokemonType1 = document.createElement("h1");
+  pokemonType1.textContent = pokemons[i].type[0];
   let pokemonType2 = document.createElement("h1");
   pokemonType2.textContent = pokemons[i].type[1];
 
+    columnType1.appendChild(pokemonType1);
+    columnType2.appendChild(pokemonType2);
+    rowType.appendChild(columnType1);
+    rowType.appendChild(columnType2);
     cards.appendChild(pokemonName);
     cards.appendChild(pokemonPhoto);
     cards.appendChild(pokemonNumber);
-    cards.appendChild(pokemonType);
-    cards.appendChild(pokemonType2);
+    cards.appendChild(rowType);
+
+    columnCard.appendChild(cards);
 
     //Mostrar tarjeta en el contenedor especificado
-    document.getElementById("root").appendChild(cards).innerHTML;   
+    document.getElementById("root").appendChild(columnCard).innerHTML; 
 
-}
 
-//Filtrado, muestra en CARDS
-data.filtPo
-counter.document.getElementById("list", () =>{
-  let condition =counter.options[counter.selectedIndex].value;
-  let filterPoke = filterPoke (data, condition);
-  containerRoot.innerHTML = "";
-  //console.log(filterPoke);
-  
-  filterPoke.forEach(element =>{
-    let element = element(document.getElementById("listPo"))
-    containerRoot.innerHTML +=
-  
-})
+
+
+
+
 
 
 
 
 
-})
+}
