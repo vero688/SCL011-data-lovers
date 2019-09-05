@@ -14,8 +14,9 @@
       <div class="topMenu">
         <div class="searchBar">
         </div>
-        
-        <select id="listPo" onchange="list()">
+        <div>
+          
+        <select id="tipos1" onchange="list()">
           <option label="Tipo"></option>
           <option value="fire" label="fuego"></option>
           <option value="steel" label="acero"></option>
@@ -36,14 +37,12 @@
           <option value="poison" label="veneno"></option>
           <option value="flying" label="volador"></option>
         </select>
+        <input type="button" value="buscar" id="buttonT"></input>
+      
+      </div>
+      <div id="open modal"  class="modal.window"></div>
         </div>
-      <div class="row">
-          <a href="index.html">
-              <img id="logo" src="img/logo.png">
-          </a>          
-            <div class="searchBar">
-              <input type="text" id="search" placeholder="Ingresa nombre o número para la búsqueda">           
-            <div class="selectors">
+    
               <label></label>
               
           

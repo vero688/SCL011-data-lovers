@@ -135,3 +135,12 @@ body{
         margin-bottom: 20px;
     }
 }
+
+modal.window{
+
+    position: fixed;
+    color: blanchedalmond;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s;
+}
