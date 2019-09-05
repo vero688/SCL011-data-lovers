@@ -5,11 +5,22 @@
 body{
     width: 100%;
 }
-#logo {
-    width: 350px;
-    height: 200px;
+header{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    /*background-image: linear-gradient()*/
+}
+
+#logo {  
+    max-width: 700px;
+    height: auto;
     margin-top: 0px;
-    margin-left: 3em;
 }
 #rowType{
 
@@ -84,15 +95,13 @@ body{
     #root{
         justify-content: center;
     }
-    #logo{
-
-        margin-left: calc(100%-180px);
-        width: 80%;
-    }
 
     .cards{
         /*background-image: linear-gradient();*/
         padding: 16px;
+    }
+    #logo{
+        max-width: 400px;
     }
 }
 
@@ -115,17 +124,6 @@ body{
         margin-bottom: 20px;
     }
 }
-@media only screen and (min-width: 800px) and (max-width: 1249px) {
-
-    .column{
-
-        width: 25%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
-
 @media only screen and (min-width: 800px) and (max-width: 1249px) {
 
     .column{
