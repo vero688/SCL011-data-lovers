@@ -78,10 +78,6 @@ const selectorType = document.getElementById("filterType");
 //id "filterType" cambie de value, se ejecutará la función showByType
 selectorType.addEventListener("change", showByType);
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 72fca06c7adcf6b5173db1546b776f983a9ab9e1
 function showByType()
 {
   //Le entregamos a la variable selectedType el valor que ha sido seleccionado desde el html
@@ -262,5 +258,4 @@ function showByType()
   }
     }
     
-=======
 
