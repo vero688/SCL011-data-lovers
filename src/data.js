@@ -15,7 +15,7 @@ const filterTypes = (pokemonList, selectedType) => {
   //el criterio de búsqueda, en este caso crearía un arreglo de todos los pokemons
   //que cumplan con el 'type' seleccionado.
   //trabajamos con 'Element' a modo genérico, en este caso el elemento será la variable
-  //donde se encuentra
+  //donde se encuentra la lista de pokemons utiizada  en el main.js
   const resultType = pokemonList.filter(Element => {
     //retornará todo elemento donde se encuentre dentro de su array de tipo 'type' según
     //sea el value seleccionado en el selectBox (html estático)
@@ -26,6 +26,8 @@ const filterTypes = (pokemonList, selectedType) => {
 }
 //hacemos FilterTypes de modo global para llamarla desde main.js
 window.filterTypes = filterTypes;
+
+
 
 
     

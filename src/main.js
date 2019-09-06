@@ -69,7 +69,7 @@ for(let i=0; i<pokemons.length;i++){
     document.getElementById("root").appendChild(columnCard).innerHTML; 
   }
 
-}
+
 
 //Le entregamos a la variable selectorType el id del selector del cual obtendremos
 //el value seleccionado por el usuario
@@ -165,4 +165,3 @@ function showByType()
 
 }
   }
-
