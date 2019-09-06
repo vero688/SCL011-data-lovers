@@ -27,6 +27,15 @@ const filterTypes = (pokemonList, selectedType) => {
 //hacemos FilterTypes de modo global para llamarla desde main.js
 window.filterTypes = filterTypes;
 
+//filtrado por debilidad
+    const filterWeakness =(pokemonList,weaknessType) =>{
+    const weakness =pokemonList.filter(Element =>{
+        return Element.weaknesses.includes(weaknessType);
+    });
+    return weakness;
+    //console.log("weaknessType");
+}
+window.filterWeakness = filterWeakness;
 
 
 
