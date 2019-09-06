@@ -31,7 +31,7 @@ window.filterTypes = filterTypes;
 window.pokemonList = pokemonList;
     const filterWeakness =(pokemonList,weaknessType) =>{
     const weakness =pokemonList.filter(Element =>{
-        return Element.type.includes(weaknessType);
+        return Element.weaknesses.includes(weaknessType);
     });
     return weakness;
     console.log("weaknessType")

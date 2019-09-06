@@ -222,7 +222,7 @@ function showByType()
     let columnType3 = document.createElement("div");
     columnType3.className = "column";
     let columnType4 = document.createElement("div");
-    columnType.className = "column";
+    columnType4.className = "column";
     //Tiene uno o dos tipos
     //Ideal sería hacer un if, que si tiene un tipo entonces cree un label y de acuerdo
     //sea el tipo, será la clase que tomará (para que sean de colores distintos) y si son
