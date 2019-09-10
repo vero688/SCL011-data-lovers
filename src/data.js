@@ -62,7 +62,11 @@ const sortAlphabetical = (pokemonList)=>{
 
 window.sortAlphabetical = sortAlphabetical;*/
 
+function sortByAlphabetAsc(pokemons){
+  pokemons.sort((a, b) => a.name.localeCompare(b.name))
+}
 
+window.sortByAlphabetAsc = sortByAlphabetAsc;
     
      
         

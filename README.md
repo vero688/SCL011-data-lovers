@@ -1,6 +1,6 @@
 # **Proyecto II: Data Lovers**
 
-## Pokédex Ayuda****
+## Pokémon Guía****
 
 * [Preámbulo](#preámbulo)
 * [Descripción](#resumen-del-proyecto)
@@ -15,7 +15,8 @@
 
 ***
 
-## **1. Pokemon**
+## **1. Un poco de historia**
+
 
 Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
