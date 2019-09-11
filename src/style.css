@@ -155,13 +155,9 @@ nav{
     bottom:0px;
     transition:all .5s ease-in-out;
     opacity:0;
-    z-index:-1;
+    z-index:1;
   }
-  .modal:target {
-    opacity:1;
-    transition:all .5s ease-in-out;
-    z-index:+1;
-  }
+  
   .modal-content {
     position:fixed;
     top:50%;
@@ -175,13 +171,7 @@ nav{
     outline:1px solid transparent;
     opacity:0;
   }
-  .modal:target .modal-content {
-    transform:translate(-50%, -50%);
-    transition:all .5s ease-in-out;
-    transition-delay:.5s;
-    z-index:9999;
-    opacity:1;
-  }
+ 
   .modal-close {
     float:right;
     text-decoration:none;
