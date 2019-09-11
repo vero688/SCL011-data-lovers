@@ -48,8 +48,8 @@ window.pokemonList = pokemonList;
   //hacemos FilterTypes de modo global para llamarla desde main.js
 window.filterWeakness = filterWeakness;
 
-const ordenList = window.POKEMON.pokemon;
-
+//const ordenList = window.POKEMON.pokemon;
+/*
    const ordenList2 = (data,sortDe, sortOrd) =>{
   const ordenResult = datos.orden ((a,b) =>{
     bringBack [sortDe].CompareList(b[sortDe]);
@@ -64,4 +64,4 @@ const ordenList = window.POKEMON.pokemon;
 }
     window.ordenLtist = ordenList; 
         
-    
+    */

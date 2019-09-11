@@ -261,7 +261,7 @@ function showByType()
   
   }
     }
-
+/*
 
     const ordenList = document.getElementById("ordenList");
     ordenList.addEventListener("sort",sortOrden);
@@ -353,4 +353,4 @@ function showByType()
   
   }
     }
- 
+ */
