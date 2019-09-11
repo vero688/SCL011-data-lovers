@@ -27,14 +27,7 @@ const filterTypes = (pokemonList, selectedType) => {
 //hacemos FilterTypes de modo global para llamarla desde main.js
 window.filterTypes = filterTypes;
 
-<<<<<<< HEAD
-
-window.pokemonList = pokemonList;
-  //filtrar por Debilidad 
-  //Recibe dos parámetos: 1.La lista de pokemons y 2. El 'type' que se ha seleccionado
-=======
 //filtrado por debilidad
->>>>>>> 1f43492c81b2f519a545dbfca8b8ac298f4f5984
     const filterWeakness =(pokemonList,weaknessType) =>{
       //.filter() crea un nuevo array compuesto por los elementos que cumplen
   //el criterio de búsqueda, en este caso crearía un arreglo de todos los pokemons
