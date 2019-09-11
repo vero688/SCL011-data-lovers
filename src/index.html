@@ -9,30 +9,50 @@
   <body>
     <header>
       <a href="index.html">
-        <img id="logo" src="img/wallpaper1_1.png">
+        <img id="logo" src="img/title1440x400.png">
       </a>        
       
     </header>
-    <nav>          
-      <select id="filterType" >
-        <option value="lista"   label="Tipo"></option>
-        <option value="Fire" label="fuego"></option>
-        <option value="Bug" label="bicho"></option>
-        <option value="Water" label="agua"></option>
-        <option value="Dragon" label="dragon"></option>
-        <option value="Electric" label="electrico"></option>
-        <option value="Ghost" label="fantasma"></option>
-        <option value="Ice" label="hielo"></option>
-        <option value="Fighting" label="lucha"></option>
-        <option value="Normal" label="normal"></option>
-        <option value="Grass" label="planta"></option>
-        <option value="Psychic" label="psiquico"></option> 
-        <option value="Rock" label="roca"></option>
-        <option value="Ground" label="tierra"></option>
-        <option value="Poison" label="veneno"></option>
-        <option value="Flying" label="volador"></option>
-      </select>
+    <nav>   
+        <div id="selectContainer">
+            <select id="filterType" >
+                <option value="lista"   label="Filtrar Tipo"></option>
+                <option value="Fire" label="Fuego"></option>
+                <option value="Bug" label="Bicho"></option>
+                <option value="Water" label="Agua"></option>
+                <option value="Dragon" label="Dragon"></option>
+                <option value="Electric" label="Electrico"></option>
+                <option value="Ghost" label="Fantasma"></option>
+                <option value="Ice" label="Hielo"></option>
+                <option value="Fighting" label="Lucha"></option>
+                <option value="Normal" label="Normal"></option>
+                <option value="Grass" label="Planta"></option>
+                <option value="Psychic" label="Psiquico"></option> 
+                <option value="Rock" label="Roca"></option>
+                <option value="Ground" label="Tierra"></option>
+                <option value="Poison" label="Veneno"></option>
+                <option value="Flying" label="Volador"></option>
+              </select>
+   
+            <select id="filterWeakness" >
+                <option value="weakness" label="Filtrar Debilidad"></option>
+                <option value="Fire" label="Fuego"></option>
+                <option value="Bug" label="Bicho"></option>
+                <option value="Water" label="Agua"></option>
+                <option value="Dragon" label="Dragon"></option>
+                <option value="Electric" label="Eléctrico"></option>
+                <option value="Ghost" label="Fantasma"></option>
+                <option value="Ice" label="Hielo"></option>
+                <option value="Fighting" label="Lucha"></option>
+                <option value="Grass" label="Planta"></option>
+                <option value="Psychic" label="Psiquico"></option> 
+                <option value="Rock" label="Roca"></option>
+                <option value="Ground" label="Tierra"></option>
+                <option value="Poison" label="Veneno"></option>
+                <option value="Flying" label="Volador"></option>
+              </select>
 
+<<<<<<< HEAD
       <select id="filterWeakness" >
           <option value="weakness" label="Debilidades"></option>
           <option value="Fire" label="fuego"></option>
@@ -60,8 +80,34 @@
             <option value="151-1" label="151-1"></option>
 
           </select>
+=======
+          <select id="filterEggs" >
+            <option value="#" label="Filtrar Huevos"></option>
+            <option value="2 km" label="2 KM"></option>
+            <option value="5 km" label="5 KM"></option>
+            <option value="10 km" label="10 KM"></option>
+            <option value="Not in Eggs" label="No aparece en huevos"></option>          
+          </select>
+
+          <select id="orderSelector" >
+              <option value="#" label="Ordenar por"></option>
+              <option value="alphaAsc" label="A - Z"></option>
+              <option value="alphaDesc" label="Z -A"></option>
+              <option value="numberAsc" label="1 - 151"></option>
+              <option value="numberDesc" label="151 - 1"></option>          
+            </select>
+
       
-  </nav>   
+
+      
+
+      </div>       
+
+
+      
+>>>>>>> 1f43492c81b2f519a545dbfca8b8ac298f4f5984
+      
+    </nav>   
     <!--Div que contendrá las tarjetas pókemon -->
     <section>
       <div class="container">
@@ -92,9 +138,7 @@
           
         </div>
     </section>
-
-    <!--Div que contendrá las tarjetas pókemon -->
-    <div class="listRows" id="root"></div>
+    
 
 
     <footer></footer>

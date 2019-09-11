@@ -4,21 +4,32 @@
 
 body{
     width: 100%;
+    padding: 10px 30px;
 }
 header{
 
     display: flex;
     justify-content: center;
     flex-direction: row;
+    position: inherit;
+    margin: 20px;
 }
 nav{
     display: flex;
+    position: inherit !important;
+    justify-content: center;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 15px !important;
     flex-direction: row;
+    background: linear-gradient(180deg, rgba(5, 163, 217, 0.8) 19.79%, rgba(255, 255, 255, 0) 80.21%), #52B888;
+
+border-radius: 50px;
     /*background-image: linear-gradient()*/
 }
 
 #logo {  
-    max-width: 700px;
+    max-width: 1250px;
     height: auto;
     margin-top: 0px;
 }
@@ -27,6 +38,11 @@ nav{
     display: flex;
     justify-content: center;
 
+}
+#selectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Float four columns side by side */
@@ -44,6 +60,10 @@ nav{
     content: "";
     display: table;
     clear: both;
+  }
+  .columnCard{
+
+    width: 50%;
   }
   
 /*
@@ -70,6 +90,15 @@ nav{
     box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
 
 }
+.modalCard{
+    background: rgba(7, 185, 158, 0.4);
+}
+.modalBody{
+
+    position: absolute;
+    background: rgba(240, 244, 242, 0.9);
+    border-radius: 100px;
+}
 
 
 
@@ -79,7 +108,7 @@ nav{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #05C877;
+    /*background-color: #05C877;*/
     
 }
 
