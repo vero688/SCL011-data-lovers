@@ -51,6 +51,15 @@
           <option value="Poison" label="veneno"></option>
           <option value="Flying" label="volador"></option>
         </select>
+
+        <select id="ordenList" >
+            <option value="sortOr" label="orden Alfabetico"></option>
+            <option value="az" label="Az"></option>
+            <option value="za" label="Za"></option>
+            <option value="1-151" label="1-151"></option>
+            <option value="151-1" label="151-1"></option>
+
+          </select>
       
   </nav>   
     <!--Div que contendrá las tarjetas pókemon -->
@@ -59,9 +68,29 @@
         <div class="row">
               <div id="root"></div>            
         </div>
-        
-      </div>
-      
+      </div>  
+    </section>
+    <section>
+      <div class="modal" id="modal-tabbed">
+        <div class="modal content">
+          <a href="#" class="modal-close"
+          title="close modal">X</a>
+          <div class="modal-area">
+            <input id="open1"  type="radio" name="modaltabs" checked="checked"/>
+            <label for="open1"> tab 1</label>
+            <input id="open2" type="radio" name="modaltabs"/>
+           <label for="open2">tap 2</label>
+          <input id="open3" type="radio" name="modaltabs"/>
+          <label for="open3">tap 3</label>
+          
+      <ul class="tab-list">
+        <li class="modal-tab tab1"><p>Tab 1 Content</p></li>
+        <li class="modal-tab tab2"><p>Tab 2 Content</p></li>
+        <li class="modal-tab tab3"><p>Tab 3 Content</p></li>
+      </ul>
+          
+          
+        </div>
     </section>
 
     <!--Div que contendrá las tarjetas pókemon -->
