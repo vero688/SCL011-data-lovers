@@ -73,12 +73,12 @@ function createCard(data){
       document.getElementById("root").appendChild(columnCard).innerHTML; 
     }
 }
-
+//Aquí mostramos todas las tarjetas, recorre toda la data
 createCard(pokemons);
 
 
 
-/*Crear Modal por tarjeta*/
+/*Crear Modal por tarjeta
 function createModal(data){
   
   for(let i=0; i<data.length;i++){
@@ -91,7 +91,7 @@ function createModal(data){
 
 
 } 
-
+*/
 //Le entregamos a la variable selectorType el id del selector del cual obtendremos
 //el value seleccionado por el usuario
 const selectorType = document.getElementById("filterType");
