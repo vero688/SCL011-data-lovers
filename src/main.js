@@ -126,9 +126,8 @@ selectOrd.addEventListener("change", showOrd);
 function showOrd()
 {
 let selectOrd2 = selectOrd.options[selectOrd.selectedIndex].value;
-let orderResult = window.orderSelector(window.pokedata, selectOrd2);
+let filterResult = window.orderSelector(pokemons, selectOrd2);
  document.getElementById("root").innerHTML="";
  
-    createCard(orderResult);
+    createCard(filterResult);
   }
- 

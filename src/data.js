@@ -50,26 +50,28 @@ window.filterWeakness = filterWeakness;
 
 
 
-    const orderSelector = (pokedata,selectOrd) => {
-      let orderSelector = "";
-  if (selectOrd === "1-151"){
-    orderSelector = pokedata.sort((a,b) => {
-  return a,b;
-  })} 
-  else if(selectOrd === "151-1"){
-    orderSelector = pokedata.sort((a,b) => {
-      return b,a;
-    })}
+    const orderSelector = (pokemonList,selectOrd) => {
 
-    else if (selectOrd === "A-Z"){
-      orderSelector = pokedata.sort((a,b) => {
-        return a,b;
+      let orderSelector = "";
+      alert(pokemonList.name());
+  if (selectOrd === "numberAsc"){
+    orderSelector = pokemonList.sort(() => {
+  return Element.includes('id');
+  })} 
+  else if(selectOrd === "numberDesc"){
+    orderSelector = pokemonList.sort(() => {
+      return Element.includes('id');
+    })}
+    else if (selectOrd === "alphaAsc"){
+      orderSelector = pokemonList.sort((a,b) => {
+        return Element.includes('name');
       })}
-    else if(selectOrd === "Z-A"){
-      orderSelector = pokedata.sort((a,b)=>{
-      return b,a;
+    else if(selectOrd === "alphaDesc"){
+      orderSelector = pokemonList.sort((a,b)=>{
+      return Element.includes('name');;
         })}
-       
+        }
+        
         return orderSelector;
         
       }
