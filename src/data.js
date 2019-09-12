@@ -80,32 +80,32 @@ window.filterEggs = filterEggs;
   }
 }
     window.ordenLtist = ordenList; 
-
+*/
 
     const orderSelector = (pokemonList,selectOrd) => {
 
       let orderSelector = "";
-      alert(pokemonList.name());
+    
   if (selectOrd === "numberAsc"){
-    orderSelector = pokemonList.sort(() => {
-  return Element.includes('id');
+    orderSelector = pokemonList.sort((a,b) => {
+  return (a.id -b.id);
   })} 
   else if(selectOrd === "numberDesc"){
-    orderSelector = pokemonList.sort(() => {
-      return Element.('id');
+    orderSelector = pokemonList.sort((a,b) => {
+      return (b.id -a.id);
     })}
     else if (selectOrd === "alphaAsc"){
       orderSelector = pokemonList.sort((a,b) => {
-        return Element.includes('name');
+        return a.name.localeCompare(b.name);
       })}
     else if(selectOrd === "alphaDesc"){
       orderSelector = pokemonList.sort((a,b)=>{
-      return Element.includes('name');;
+      return b.name.localeCompare(a.name);
         })}
-        }
+        
         
         return orderSelector;
-        
       }
+      
       window.orderSelector = orderSelector; 
-      */
+      
