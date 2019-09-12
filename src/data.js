@@ -60,7 +60,7 @@ window.filterWeakness = filterWeakness;
   })} 
   else if(selectOrd === "numberDesc"){
     orderSelector = pokemonList.sort(() => {
-      return Element.includes('id');
+      return Element.('id');
     })}
     else if (selectOrd === "alphaAsc"){
       orderSelector = pokemonList.sort((a,b) => {
