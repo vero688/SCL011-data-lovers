@@ -91,13 +91,23 @@ border-radius: 50px;
 
 }
 .modalCard{
-    background: rgba(7, 185, 158, 0.4);
+    background: #52B888;
+    position: fixed; /* La misma posición */
+    z-index: 1; /*Cuando varios elementos se superponen, determina cuales cubren a otros */
+    padding: 10px 10px;
+    margin: 20px 20px;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 70%;
 }
-.modalBody{
+.modalBackground{
 
     position: absolute;
+    width: 90%;
+    height: 70%;
     background: rgba(240, 244, 242, 0.9);
-    border-radius: 100px;
+    border-radius: 80px 80px 0px 0px;
 }
 
 

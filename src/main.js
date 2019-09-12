@@ -57,6 +57,85 @@ function createCard(data){
     pokemonType1.textContent = data[i].type[0];
     let pokemonType2 = document.createElement("h1");
     pokemonType2.textContent = data[i].type[1];
+
+    let btnMoreInfo = document.createElement("button");
+    btnMoreInfo.textContent = ('+ Info');
+    btnMoreInfo.className = "moreInfo";
+
+    btnMoreInfo.addEventListener("click", ()=>{
+
+      const modalContainer = document.createElement("div");
+      modalContainer.className = "modalCard"; 
+      
+      const btnClose = document.createElement("button");
+      btnClose.textContent = "x";
+      btnClose.addEventListener("click", ()=>{
+
+        modalContainer.style.display='none';
+      })
+      const modalBackground = document.createElement("div");
+      modalBackground.className = "modalBackground";
+
+      let titleSection = document.createElement("div");
+      titleSection.id = "titleSection";
+
+      let pokeTittle = document.createElement("h2");
+      pokeTittle.textContent = data[i].name;
+
+      let pokeNumber = document.createElement("h4");
+      pokeNumber.textContent = '#' + data[i].num;
+
+      let pokeImg = document.createElement("img");
+      pokeImg.src = data[i].img;
+
+      let sectionWeakness = document.createElement("div");
+      sectionWeakness.id = "sectionWeakness";
+      
+      let titleWeakness = document.createElement("h5");
+      titleWeakness.textContent = "Debilidades";
+
+      let weaknesses = document.createElement("p");
+      weaknesses.textContent = data[i].weaknesses;
+
+      let sectionEvolutions = document.createElement("div");
+      sectionEvolutions.id = "sectionEvolutions";
+
+      //hacer que si tiene evolución, muestre su img y su number
+
+      let sectionEggCandy = document.createElement("section");
+      sectionEggCandy.id = "sectionEggCandy";
+
+
+
+      let sectionAppearsAt = document.createElement("section");
+      sectionAppearsAt.id = "sectionAppearsAt";
+
+      let appearsAt = document.createElement("p");
+      appearsAt.textContent = 'Aparece a las '+ data[i].spawn_time;
+      
+      
+      titleSection.appendChild(pokeTittle);
+      titleSection.appendChild(pokeNumber);
+      modalContainer.append(btnClose);
+      modalContainer.appendChild(titleSection);
+      modalContainer.appendChild(modalBackground);  
+      modalBackground.appendChild(pokeImg);
+      sectionWeakness.appendChild(titleWeakness);
+      sectionWeakness.appendChild(weaknesses);
+      //sectionEggCandy.childAppend()
+      //sectionEvolutions.childAppend()
+      sectionAppearsAt.appendChild(appearsAt);
+      
+      modalBackground.appendChild(sectionWeakness);
+      modalBackground.appendChild(sectionAppearsAt);
+      
+
+      
+      cards.appendChild(modalContainer);
+      
+
+
+    })
   
       columnType1.appendChild(pokemonType1);
       columnType2.appendChild(pokemonType2);
@@ -66,6 +145,7 @@ function createCard(data){
       cards.appendChild(pokemonPhoto);
       cards.appendChild(pokemonNumber);
       cards.appendChild(rowType);
+      cards.appendChild(btnMoreInfo);
   
       columnCard.appendChild(cards);
   
@@ -78,20 +158,7 @@ createCard(pokemons);
 
 
 
-/*Crear Modal por tarjeta
-function createModal(data){
-  
-  for(let i=0; i<data.length;i++){
 
-
-
-  }
-
- 
-
-
-} 
-*/
 //Le entregamos a la variable selectorType el id del selector del cual obtendremos
 //el value seleccionado por el usuario
 const selectorType = document.getElementById("filterType");

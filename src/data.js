@@ -27,14 +27,7 @@ const filterTypes = (pokemonList, selectedType) => {
 //hacemos FilterTypes de modo global para llamarla desde main.js
 window.filterTypes = filterTypes;
 
-<<<<<<< HEAD
-
-window.pokemonList = pokemonList;
-  //filtrar por Debilidad 
-  //Recibe dos parámetos: 1.La lista de pokemons y 2. El 'type' que se ha seleccionado
-=======
-//filtrado por debilidad
->>>>>>> 1f43492c81b2f519a545dbfca8b8ac298f4f5984
+  //filtrar por D
     const filterWeakness =(pokemonList,weaknessType) =>{
       //.filter() crea un nuevo array compuesto por los elementos que cumplen
   //el criterio de búsqueda, en este caso crearía un arreglo de todos los pokemons
@@ -52,6 +45,24 @@ window.pokemonList = pokemonList;
   //hacemos FilterTypes de modo global para llamarla desde main.js
 window.filterWeakness = filterWeakness;
 
+/*Queremos filtrar los pokemons que aparecen en cada huevo, mediante un selector el usuario
+indicará si quiere ver los pókemons en huevos de 2,5,7,10,15, o que no aparecen en huevos.
+Trabajaremos nuevamente con la lista completa de pokemons y el criterio que vendría siendo
+la selección del usuario.*/
+const filterEggs = (pokemonList, eggSelected)=>{
+  /*En una variable almacenaremos el array que se formará al llamar a la función filter
+  donde ya tendremos todos los resultados que coinciden con el criterio de búsqueda*/
+  const filteredEggs = pokemonList.filter(Element =>{
+    /*El criterio de búsqueda en este caso, es que en pokemon.js : pokemon.egg = a la 
+    selección del usuario */
+    return Element.egg === eggSelected;
+  })
+  /*Retornamos nuestra variable donde almacenamos previamente lo que resultaba de la función
+  filtrar*/
+  return filteredEggs;
+}
+//Nuevamente hacemos de nuestra función global para poder llamarla desde main.js
+window.filterEggs = filterEggs;
 //const ordenList = window.POKEMON.pokemon;
 /*
    const ordenList2 = (data,sortDe, sortOrd) =>{
