@@ -65,44 +65,31 @@ const filterEggs = (pokemonList, eggSelected)=>{
 //Nuevamente hacemos de nuestra función global para poder llamarla desde main.js
 window.filterEggs = filterEggs;
 
-//const ordenList = window.POKEMON.pokemon;
-/*
-   const ordenList2 = (data,sortDe, sortOrd) =>{
-  const ordenResult = datos.orden ((a,b) =>{
-    bringBack [sortDe].CompareList(b[sortDe]);
-  })
-  Console.log("ordenlist");
-  if (sortOrd === "asc") {
-    return Element.name.includes(ordenResult);
-  }
-  if (sortDe ==="desc"){
-    
-  }
-}
-    window.ordenLtist = ordenList; 
-*/
-
-    const orderSelect = (pokemonList,selectOrd) => {
+    const orderSelector = (pokemonList,selectOrd) => {
 
       let orderSelector = "";
+    
       if (selectOrd === "numberAsc"){
         orderSelector = pokemonList.sort((a,b) => {
-      return (a.id - b.id);
+      return (a.id -b.id);
       })} 
       else if(selectOrd === "numberDesc"){
         orderSelector = pokemonList.sort((a,b) => {
-      return (b.id - a.id);
+      return (b.id -a.id);
       })}
       else if (selectOrd === "alphaAsc"){
         orderSelector = pokemonList.sort((a,b) => {
-        return a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name);
       })}
       else if(selectOrd === "alphaDesc"){
         orderSelector = pokemonList.sort((a,b)=>{
       return b.name.localeCompare(a.name);
       })}
-
+        
+        
       return orderSelector;
-    }
-    window.orderSelect = orderSelect; 
-       
+
+      }
+      
+      window.orderSelector = orderSelector; 
+      

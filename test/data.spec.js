@@ -99,3 +99,43 @@ describe('filterEggs()', () => {
     assert.deepEqual(window.filterEggs(muestra, '5 km'),[{"name": "Ekans",  "egg": "5 km"}]);
   });
 })
+
+describe('orderSelector()',()=>{
+
+  const muestra = [
+    {
+      "name": "Bulbasaur",
+      "id": 1
+
+    },
+    {
+      "name": "Kakuna",
+      "id": 14
+    },
+    {
+      "name": "Charmander",
+      "id": 4
+    }
+
+  ];
+  it('Debería ser una función', () => {
+    assert.equal(typeof window.orderSelector, 'function');
+  });
+  it('debería retornar "Bulbasaur", "Charmander" , "Kakuna" al ordenar por número descendente', () => {
+    assert.deepEqual(window.orderSelector(muestra, 'numberDesc'),[{"name": "Kakuna", "id": 14},
+    {"name": "Charmander", "id": 4},{"name": "Bulbasaur", "id": 1}]);
+  });
+  it('debería retornar "Bulbasaur", "Charmander" , "Kakuna" al ordenar por número ascendente', () => {
+    assert.deepEqual(window.orderSelector(muestra, 'numberAsc'),[{"name": "Bulbasaur", "id": 1},
+    {"name": "Charmander", "id": 4},{"name": "Kakuna", "id": 14}]);
+  });
+  it('debería retornar "Bulbasaur", "Charmander" , "Kakuna" al ordenar por alfabeto ascendente', () => {
+    assert.deepEqual(window.orderSelector(muestra, 'alphaAsc'),[{"name": "Bulbasaur", "id": 1},
+    {"name": "Charmander", "id": 4},{"name": "Kakuna", "id": 14}]);
+  });
+  it('debería retornar "Kakuna", "Charmander" , "Bulbasaur" al ordenar por alfabeto descendente', () => {
+    assert.deepEqual(window.orderSelector(muestra, 'alphaDesc'),[{"name": "Kakuna", "id": 14},
+    {"name": "Charmander", "id": 4},{"name": "Bulbasaur", "id": 1}]);
+  });
+
+})
