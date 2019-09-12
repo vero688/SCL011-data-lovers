@@ -203,7 +203,7 @@ selectOrd.addEventListener("change", showOrd);
 function showOrd()
 {
 let selectOrd2 = selectOrd.options[selectOrd.selectedIndex].value;
-let filterResult = window.orderSelector(pokemons, selectOrd2);
+let filterResult = window.orderSelect(pokemons, selectOrd2);
  document.getElementById("root").innerHTML="";
  
     createCard(filterResult);
