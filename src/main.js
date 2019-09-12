@@ -208,3 +208,16 @@ let filterResult = window.orderSelector(pokemons, selectOrd2);
  
     createCard(filterResult);
   }
+
+
+  const selectEggs = document.getElementById("filterEggs");
+  selectEggs.addEventListener("change",showEgg);
+
+  function showEgg()
+{
+  let selectEggs2 =selectEggs.options[selectEggs.selectedIndex].value;
+  let filterResult = window.filterEggs(pokemons,selectEggs2);
+  document.getElementById("root").innerHTML="";
+
+createCard(filterResult);
+}

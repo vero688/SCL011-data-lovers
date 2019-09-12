@@ -66,21 +66,7 @@ const filterEggs = (pokemonList, eggSelected)=>{
 window.filterEggs = filterEggs;
 
 //const ordenList = window.POKEMON.pokemon;
-/*
-   const ordenList2 = (data,sortDe, sortOrd) =>{
-  const ordenResult = datos.orden ((a,b) =>{
-    bringBack [sortDe].CompareList(b[sortDe]);
-  })
-  Console.log("ordenlist");
-  if (sortOrd === "asc") {
-    return Element.name.includes(ordenResult);
-  }
-  if (sortDe ==="desc"){
-    
-  }
-}
-    window.ordenLtist = ordenList; 
-*/
+
 
     const orderSelector = (pokemonList,selectOrd) => {
 
@@ -98,7 +84,7 @@ window.filterEggs = filterEggs;
       orderSelector = pokemonList.sort((a,b) => {
         return a.name.localeCompare(b.name);
       })}
-    else if(selectOrd === "alphaDesc"){
+    else (selectOrd === "alphaDesc"){
       orderSelector = pokemonList.sort((a,b)=>{
       return b.name.localeCompare(a.name);
         })}
@@ -109,3 +95,26 @@ window.filterEggs = filterEggs;
       
       window.orderSelector = orderSelector; 
       
+
+      const filterEggs = (pokemonList,EggsOr) =>{
+
+        let filterEggs = "";
+        if (EggsOr === "2 km"){
+          filterEggs= pokemonList.sort((a,b) =>{
+            return (a.id -b.id);
+          })}
+          else if (EggsOr === "5 km"){
+            filterEggs = pokemonList.sort((a,b) =>{
+              return (b.id -a.id);
+            })}
+            else if (EggsOr === "10 km"){
+              filterEggs= pokemonList.sort((a,b) =>{
+                return a.name.localeCompare(b.name);
+              })}
+              else if (EggsOr === "Not in Eggs"){
+                filterEggs= pokemonList.sort((a,b) =>{
+                  return b.name.localeCompare(a.name);
+                })}
+                return filterEggs;
+      }
+      window.filterEggs = filterEggs; 
