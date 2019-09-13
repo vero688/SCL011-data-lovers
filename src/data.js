@@ -81,7 +81,7 @@ window.filterEggs = filterEggs;
         orderSelector = pokemonList.sort((a,b) => {
       return a.name.localeCompare(b.name);
       })}
-      else if(selectOrd === "alphaDesc"){
+      else{
         orderSelector = pokemonList.sort((a,b)=>{
       return b.name.localeCompare(a.name);
       })}

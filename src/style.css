@@ -5,6 +5,7 @@
 body{
     width: 100%;
     padding: 10px 30px;
+    font-family: Manjari;
 }
 header{
 
@@ -16,15 +17,13 @@ header{
 }
 nav{
     display: flex;
-    position: inherit !important;
-    justify-content: center;
+    position: inherit !important;    
     height: 50px;
     padding: 15px;
-    margin-bottom: 15px !important;
-    flex-direction: row;
+    margin-bottom: 15px !important;    
     background: linear-gradient(180deg, rgba(5, 163, 217, 0.8) 19.79%, rgba(255, 255, 255, 0) 80.21%), #52B888;
 
-border-radius: 50px;
+    border-radius: 50px;
     /*background-image: linear-gradient()*/
 }
 
@@ -32,6 +31,12 @@ border-radius: 50px;
     max-width: 1250px;
     height: auto;
     margin-top: 0px;
+}
+#filterSection{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-around;
 }
 #rowType{
 
@@ -140,7 +145,10 @@ border-radius: 50px;
         padding: 16px;
     }
     #logo{
-        max-width: 400px;
+        max-width: 100%;
+    }
+    .row{
+      width: 100%;
     }
 }
 
@@ -152,6 +160,13 @@ border-radius: 50px;
         display: block;
         margin-bottom: 20px;
     }
+    .row{
+      width: 100%;
+    }
+    #logo{
+      max-width: 100%;
+      height: auto;
+    }
 
 }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
@@ -162,6 +177,13 @@ border-radius: 50px;
         display: block;
         margin-bottom: 20px;
     }
+    #logo{
+      max-width: 100%;
+      height: auto;
+    }
+    .row{
+      width: 100%;
+    }
 }
 @media only screen and (min-width: 800px) and (max-width: 1249px) {
 
@@ -171,131 +193,23 @@ border-radius: 50px;
         display: block;
         margin-bottom: 20px;
     }
+    nav{
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 18px;
+      top: -3cm;      
+   }
+   .row{
+    width: 100%;
+  }
+   #logo{
+    max-width: 100%;
+    height: auto;
+  }
 }
 
- nav{
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 18px;
-    top: -3cm;
-    
- }
 
- /* modal open|close controller 
-  .modal {
-    background:rgba(0,0,0,0.7);
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    bottom:0px;
-    transition:all .5s ease-in-out;
-    opacity:0;
-    z-index:-1;
-  }
-  
-  .modal-content {
-    position:fixed;
-    top:50%;
-    left:50%;
-    width:500px;
-    background:#fff;
-    border-radius:4px;
-    transform:translate(-50%, -200%);
-    transition:all .5s ease-in-out;
-    perspective: 1000;
-    outline:1px solid transparent;
-    opacity:0;
-  }
+
  
-  .modal-close {
-    float:right;
-    text-decoration:none;
-    padding:22px 22px;
-    color:#424242;
-    font-weight:800;
-    transition:all .5s ease-in-out;
-    z-index:+1;
-    background:rgba(0,0,0,0.1);
-    text-align:center;
-    border-radius:0 4px 0 0;
-  }
-  .modal-close:hover {
-    color:#fff;
-    background:rgba(0,0,0,0.5);
-  }
-  .modal-content h3 {
-    padding:20px;
-    display:block;
-    text-align:center;
-    border-bottom:1px solid #e0e0e0;
-    text-transform:uppercase;
-    background:rgba(2,162,239,1);
-    color:#fff;
-    border-radius:4px 4px 0 0;
-  }
-  .modal-area {
-    padding:20px;
-  }
-  
-  .modal-area input[type="radio"] {
-    display:none;
-  }
-  .modal-area label {
-    float:left;
-    display:block;
-    padding:10px 20px;
-    font-weight:700;
-    cursor:pointer;
-    z-index:+2;
-    background:rgba(0,0,0,.3);
-    color:#fff;
-    transition:all .5s ease-in-out;
-  }
-  .modal-area input[type="radio"]:checked + label {
-    background:#fff;
-    color:#424242;
-  }
-  .tab-list {
-    display:block;
-    padding:0;
-    margin:0;
-    list-style-type:none;
-    width:100%;
-    overflow:hidden;
-    height:150px;
-  }
-  .tab-list:before {
-    content:"";
-    display:block;
-    height:0;
-    clear:both;
-  }
-  .modal-tab {
-    display:inline-block;
-    width:100%;
-    padding-top:20px;
-    transform:translateX(-150%);
-    transition:all 300ms cubic-bezier(0, 0, .40, 1);
-    opacity:0;
-    top:0px;
-    position:absolute;
-    height:150px;
-    perspective:1000;
-  }
-  #opentab1:checked ~ .tab-list .tab1 {
-    transform:translateX(0%);
-    opacity:1;
-  }
-  #opentab2:checked ~ .tab-list .tab2 {
-    transform:translateX(0%);
-    opacity:1;
-  }
-  #opentab3:checked ~ .tab-list .tab3 {
-    transform:translateX(0%);
-    opacity:1;
-  }
-*/
