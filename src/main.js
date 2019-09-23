@@ -64,7 +64,7 @@ function createCard(data){
     pokemonType1.className = "tagType";
     pokemonType2.className = "tagType";
 
-    for(let j=0; j<data[i].type[j].length; j++){
+    for(let j=0; j<data[i].type[j]; j++){
         if(data[i].type[0] || data[i].type[1]=== 'Fire'){
       pokemonType1.style.backgroundColor = "#F05030";
     }else if(data[i].type[0] === 'Bug'){
@@ -232,6 +232,7 @@ function createCard(data){
     }
 }
 //Aquí mostramos todas las tarjetas, recorre toda la data
+
 createCard(pokemons);
 
 //Le entregamos a la variable selectorType el id del selector del cual obtendremos
