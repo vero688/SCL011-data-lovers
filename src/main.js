@@ -24,23 +24,27 @@ function createCard(data){
     //Le entregaremos un id
     cards.id = "cards";
   
-    let pokemonName = document.createElement("h4");
+    let pokemonName = document.createElement("h3");
     //Para rellenar el elemento h4, al ser una etiqueta de texto utilizamos textContent 
     //para asignarle su contenido
     //En pokemon.js "name"=""
     pokemonName.textContent = data[i].name;
+
+    let pokemonNumber = document.createElement("h3");
+    //En pokemon.js "num"=""  
+    pokemonNumber.textContent ="#"+ data[i].num;
     
     //Creamos el elemento img que conteneŕa la imagen de cada pokemon
     let pokemonPhoto = document.createElement("img");
     //Le decimos que en este elemento HTML su source(src="") será lo que contiene
     //el elemento img:'' dentro de la data, según sea el índice.
     //En pokemon.js "img"=""
+    
   
     pokemonPhoto.src = data[i].img;
+    pokemonPhoto.id="imgPoke";
   
-    let pokemonNumber = document.createElement("h3");
-    //En pokemon.js "num"=""  
-    pokemonNumber.textContent = data[i].num;
+  
   
     let rowType = document.createElement("div");
     rowType.className = "row";
@@ -49,14 +53,88 @@ function createCard(data){
     columnType1.className = "columnCard";
     let columnType2 = document.createElement("div");
     columnType2.className = "columnCard";
+
     //Tiene uno o dos tipos
     //Ideal sería hacer un if, que si tiene un tipo entonces cree un label y de acuerdo
     //sea el tipo, será la clase que tomará (para que sean de colores distintos) y si son
     //dos tipos entones que cree dos label.
-    let pokemonType1 = document.createElement("h1");
+    let pokemonType1 = document.createElement("p");
     pokemonType1.textContent = data[i].type[0];
-    let pokemonType2 = document.createElement("h1");
+    let pokemonType2 = document.createElement("p");
     pokemonType2.textContent = data[i].type[1];
+    pokemonType1.className = "tagType";
+    pokemonType2.className = "tagType";
+
+      for(let j=0; j<data[i].type.length; j++){
+        if(data[i].type[0] === 'Fire'){
+      pokemonType1.style.backgroundColor = "#F05030";
+    }else if(data[i].type[0] === 'Bug'){
+      pokemonType1.style.backgroundColor = "#A8B820";
+    }else if(data[i].type[0] === 'Water'){
+      pokemonType1.style.backgroundColor = "#3899F8";
+    }else if(data[i].type[0] === 'Dragon'){
+      pokemonType1.style.backgroundColor = "#7860E0";
+    }else if(data[i].type[0] === 'Electric'){
+      pokemonType1.style.backgroundColor = "#F8D030";
+    }else if(data[i].type[0] === 'Ghost'){
+      pokemonType1.style.backgroundColor = "#6060B0";
+    }else if(data[i].type[0] === 'Ice'){
+      pokemonType1.style.backgroundColor = "#58C8E0";
+    }else if(data[i].type[0] === 'Fighting'){
+      pokemonType1.style.backgroundColor = "#A05038";
+    }else if(data[i].type[0] === 'Normal'){
+      pokemonType1.style.backgroundColor = "#A8A090";
+    }else if(data[i].type[0] === 'Grass'){
+      pokemonType1.style.backgroundColor = "#2AD029";
+    }else if(data[i].type[0] === 'Psychic'){
+      pokemonType1.style.backgroundColor = "#F870A0";
+    }else if(data[i].type[0] === 'Rock'){
+      pokemonType1.style.backgroundColor = "#B8A058";
+    }else if(data[i].type[0] === 'Ground'){
+      pokemonType1.style.backgroundColor = "#F7DE3F";
+    }else if(data[i].type[0] === 'Poison'){
+      pokemonType1.style.backgroundColor = "#B058A0";
+    }else if(data[i].type[0] === 'Flying'){
+      pokemonType1.style.backgroundColor = "#98A8F0";
+    }else if(data[i].type[1]==="Fire"){
+      
+      pokemonType2.style.backgroundColor = "#F05030";
+      //columnType2.appendChild(pokemonType2);
+      //rowType.appendChild(columnType2);
+    }else if(data[i].type[1] === 'Bug'){     
+      pokemonType2.style.backgroundColor = "#A8B820";
+    }else if(data[i].type[1] === 'Water'){     
+      pokemonType2.style.backgroundColor = "#3899F8";
+    }else if(data[i].type[1] === 'Dragon'){      
+      pokemonType2.style.backgroundColor = "#7860E0";
+    }else if(data[i].type[1] === 'Electric'){      
+      pokemonType2.style.backgroundColor = "#F8D030";
+    }else if(data[i].type[1] === 'Ghost'){      
+      pokemonType2.style.backgroundColor = "#6060B0";
+    }else if(data[i].type[1] === 'Ice'){      
+      pokemonType2.style.backgroundColor = "#58C8E0";
+    }else if(data[i].type[1] === 'Fighting'){     
+      pokemonType2.style.backgroundColor = "#A05038";
+    }else if(data[i].type[1] === 'Normal'){      
+      pokemonType2.style.backgroundColor = "#A8A090";
+    }else if(data[i].type[1] === 'Grass'){     
+      pokemonType2.style.backgroundColor = "#2AD029";
+    }else if(data[i].type[1] === 'Psychic'){   
+      pokemonType2.style.backgroundColor = "#F870A0";    
+    }else if(data[i].type[1] === 'Rock'){     
+      pokemonType2.style.backgroundColor = "#B8A058";      
+    }else if(data[i].type[1] === 'Ground'){
+      pokemonType2.style.backgroundColor = "#F7DE3F";
+    }else if(data[i].type[1] === 'Poison'){
+      pokemonType2.style.backgroundColor = "#B058A0";
+    }else if(data[i].type[1] === 'Flying'){
+      pokemonType2.style.backgroundColor = "#98A8F0";
+    }else{
+      columnType2.removeChild();
+    }
+
+      }
+    
 
     let btnMoreInfo = document.createElement("button");
     btnMoreInfo.textContent = ('+ Info');
@@ -138,15 +216,16 @@ function createCard(data){
     })
   
       columnType1.appendChild(pokemonType1);
-      columnType2.appendChild(pokemonType2);
+      
       rowType.appendChild(columnType1);
+      columnType2.appendChild(pokemonType2);
       rowType.appendChild(columnType2);
+      
       cards.appendChild(pokemonName);
-      cards.appendChild(pokemonPhoto);
       cards.appendChild(pokemonNumber);
+      cards.appendChild(pokemonPhoto);      
       cards.appendChild(rowType);
       cards.appendChild(btnMoreInfo);
-  
       columnCard.appendChild(cards);
   
       //Mostrar tarjeta en el contenedor especificado
@@ -196,6 +275,30 @@ function showByType()
 
     createCard(filterResult);
     }
+
+  
+const selectorEgg = document.getElementById("filterEggs");
+selectorEgg.addEventListener("change",showByEgg);
+
+function showByEgg()
+{
+  let eggSelected = selectorEgg.options[selectorEgg.selectedIndex].value;
+  let filterResult = window.filterEggs(pokemons, eggSelected);
+  document.getElementById("root").innerHTML="";
+
+  createCard(filterResult);
+  }
+
+  const selectorOrder = document.getElementById("orderSelector");
+  selectorOrder.addEventListener("change",sortBy);
+
+ function sortBy(){
+  let sortSelected = selectorOrder.options[selectorOrder.selectedIndex].value;
+  let ordered = window.sortByAlphabetAZ(pokemons, sortSelected);
+  document.getElementById("root").innerHTML="";
+  createCard(ordered);
+
+ }
 
 const selectOrd = document.getElementById("orderSelector");
 selectOrd.addEventListener("change", showOrd);
