@@ -251,7 +251,7 @@ function showByType()
   //Aquí decimos que en filterResult, se almacenará el resultado de la ejecución de la 
   //función filterTypes. En este momento ya se encuentran todos los pokemons que cumplen
   //con el criterio de filtrado
-  let filterResult = window.filterTypes(pokemons, selectedType);
+  let filterResult = window.filterType(pokemons, selectedType);
   //Como la primera acción del DOM dentro de la web es mostrar todos los elementos de 
   //pokemon.js en vista tarjetas dentro de un div, le indicamos a este que se vacíe para
   //recibir dentro de él los resultados del filtrado

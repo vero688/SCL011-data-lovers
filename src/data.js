@@ -1,4 +1,3 @@
-
 const pokemonList = window.POKEMON.pokemon;
 window.pokemonList = pokemonList;
 
@@ -91,53 +90,5 @@ const orderSelector = (pokemonList, selectOrd) => {
 
 window.orderSelector = orderSelector;
 
-      let orderSelector = "";
-    
-  if (selectOrd === "numberAsc"){
-    orderSelector = pokemonList.sort((a,b) => {
-  return (a.id -b.id);
-  })} 
-  else if(selectOrd === "numberDesc"){
-    orderSelector = pokemonList.sort((a,b) => {
-      return (b.id -a.id);
-    })}
-    else if (selectOrd === "alphaAsc"){
-      orderSelector = pokemonList.sort((a,b) => {
-        return a.name.localeCompare(b.name);
-      })}
-    else (selectOrd === "alphaDesc");{
-      orderSelector = pokemonList.sort((a,b) => {
-      return b.name.localeCompare(a.name);
-        })}
-        
-        
-        return orderSelector;
-      }
-      
-      window.orderSelector = orderSelector; 
-      
 
-      const filterEggs = (pokemonList,EggsOr) =>{
-
-        let filterEggs = "";
-
-        if (EggsOr === "2 km"){
-          filterEggs= pokemonList.sort((a,b) =>{
-            return (a.id -b.id);
-          })}
-          else if (EggsOr === "5 km"){
-            filterEggs = pokemonList.sort((a,b) =>{
-              return (b.id -a.id);
-            })}
-            else if (EggsOr === "10 km"){
-              filterEggs= pokemonList.sort((a,b) =>{
-                return a.name.localeCompare(b.name);
-              })}
-              else  (EggsOr === "Not in Eggs");{
-                filterEggs= pokemonList.sort((a,b) =>{
-                  return b.name.localeCompare(a.name);
-                })}
-                return filterEggs;
-      }
-      window.filterEggs = filterEggs; 
       

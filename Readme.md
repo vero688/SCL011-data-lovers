@@ -37,7 +37,9 @@ Con este prototipo pasamos a uno más armado y programado,
 https://web.whatsapp.com/#
 
 **Paleta de colores**
- 
+colores que se usaron en la pagina de pokemon 
+
+ https://docs.google.com/document/d/1Me3C20Ft68Ck_PcJIMVqPUwHz1AV7_Q-1M1zyM7phd8/edit
 
 **Prototipado de alta fidelidad** 
 [https://www.figma.com/file/rvmfaxHkkHAF5JSqpaxP3P/Untitled?node-id=8%3A6](https://www.figma.com/file/rvmfaxHkkHAF5JSqpaxP3P/Untitled?node-id=8%3A6)
