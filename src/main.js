@@ -1,4 +1,3 @@
-
 //Hicimos global la data en data/pokemon.js y aquí creamos la variable 
 //que almacenará los objetos pokemon y sus propiedades.
 const pokemons = window.POKEMON.pokemon;
@@ -65,8 +64,8 @@ function createCard(data){
     pokemonType1.className = "tagType";
     pokemonType2.className = "tagType";
 
-      for(let j=0; j<data[i].type.length; j++){
-        if(data[i].type[0] === 'Fire'){
+    for(let j=0; j<data[i].type[j].length; j++){
+        if(data[i].type[0] || data[i].type[1]=== 'Fire'){
       pokemonType1.style.backgroundColor = "#F05030";
     }else if(data[i].type[0] === 'Bug'){
       pokemonType1.style.backgroundColor = "#A8B820";
@@ -235,7 +234,6 @@ function createCard(data){
 //Aquí mostramos todas las tarjetas, recorre toda la data
 createCard(pokemons);
 
-
 //Le entregamos a la variable selectorType el id del selector del cual obtendremos
 //el value seleccionado por el usuario
 const selectorType = document.getElementById("filterType");
@@ -251,17 +249,21 @@ function showByType()
   //Aquí decimos que en filterResult, se almacenará el resultado de la ejecución de la 
   //función filterTypes. En este momento ya se encuentran todos los pokemons que cumplen
   //con el criterio de filtrado
-  let filterResult = window.filterTypes(pokemons, selectedType);
+  let filterResult = window.filterTypes(pokemons, selectedType);  
+  
+  let statsResult = window.statsCalculation(filterResult, pokemons);
+  document.getElementById("stats").innerHTML = "¿Sabías qué? Solo un "+statsResult+"% de Pokémons son de tipo "+selectedType;  
+  
   //Como la primera acción del DOM dentro de la web es mostrar todos los elementos de 
   //pokemon.js en vista tarjetas dentro de un div, le indicamos a este que se vacíe para
   //recibir dentro de él los resultados del filtrado
   document.getElementById("root").innerHTML="";
-
   //Ahora como tenemos los resultados en una variable, deberemos recorrer uno a uno los pokemons
   //para mostrarlos, del mismo modo que en el primer for donde mostramos todos los pokemons.
   //La diferencia es que en vez de referirnos a pokemon.type,.name,.etc nos referiremos a 
   //filterResult.name filterResult.img filterResult.number filterResult.type
   createCard(filterResult);
+  
   }
  
   const weaknessType = document.getElementById("filterWeakness");
@@ -271,6 +273,10 @@ function showByType()
   {
     let weaknessselected = weaknessType.options[weaknessType.selectedIndex].value;
     let filterResult = window.filterWeakness(pokemons, weaknessselected);
+
+    let statsResult = window.statsCalculation(filterResult, pokemons);
+    document.getElementById("stats").innerHTML = "¿Sabías qué? Solo un "+statsResult+"%  de Pokémons son débiles a "+weaknessselected;  
+
     document.getElementById("root").innerHTML="";
 
     createCard(filterResult);
@@ -284,6 +290,11 @@ function showByEgg()
 {
   let eggSelected = selectorEgg.options[selectorEgg.selectedIndex].value;
   let filterResult = window.filterEggs(pokemons, eggSelected);
+
+  let statsResult = window.statsCalculation(filterResult, pokemons);
+    document.getElementById("stats").innerHTML = "¿Sabías qué? Solo un "+statsResult+"%  de Pokémons aparecen en huevos de "+eggSelected;  
+  
+
   document.getElementById("root").innerHTML="";
 
   createCard(filterResult);

@@ -141,3 +141,46 @@ describe('orderSelector()', () => {
   });
 
 })
+
+describe('statsCalculation()', ()=>{
+
+  const muestra = [
+
+    {
+      "name": "Weedle",
+      "type": [
+        "Bug"
+      ],
+      "egg": "2 km",
+      "weaknesses": [
+        "Fire"
+      ]
+      
+    },
+    {
+      "name": "Pidgeotto",
+      "type": [
+        "Normal"
+      ],
+      "egg": "Not in Eggs",
+      "weaknesses": [
+        "Electric"
+      ]
+    }
+  ];
+
+  it('Debería ser una función', ()=>{
+    assert.equal(typeof window.statsCalculation, 'function');
+  });
+  it('Debería retornar un 50% al indicar cuantos pokemon son de tipo normal', ()=>{
+    assert.deepEqual(window.statsCalculation(muestra, "Normal"),50);
+  });
+  it('Debería retornar un 100% al indicar cuantos pokemon son débiles a Electric', ()=>{
+    assert.deepEqual(window.statsCalculation(muestra, "Electric"),50);
+  });
+  it('Debería retornar un 50% al indicar cuantos pokemon no aparecen en huevos', ()=>{
+    assert.deepEqual(window.statsCalculation(muestra, "Not in eggs"),50);
+  });
+
+
+});

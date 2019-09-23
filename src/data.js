@@ -91,3 +91,11 @@ const orderSelector = (pokemonList, selectOrd) => {
 
 window.orderSelector = orderSelector;
 
+const statsCalculation = (filterResult, pokemonList) => {
+  
+  const result = Math.round((filterResult.length*100)/pokemonList.length);
+  return result;
+}
+
+window.statsCalculation = statsCalculation;
+
