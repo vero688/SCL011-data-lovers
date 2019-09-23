@@ -36,6 +36,9 @@ El primer diseño fue en una hoja, donde se veía su  diseño y forma de para co
 Con este prototipo pasamos a uno más armado y programado,
 https://web.whatsapp.com/#
 
+**Paleta de colores**
+ 
+
 **Prototipado de alta fidelidad** 
 [https://www.figma.com/file/rvmfaxHkkHAF5JSqpaxP3P/Untitled?node-id=8%3A6](https://www.figma.com/file/rvmfaxHkkHAF5JSqpaxP3P/Untitled?node-id=8%3A6)
 
