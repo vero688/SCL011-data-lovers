@@ -64,8 +64,8 @@ function createCard(data){
     pokemonType1.className = "tagType";
     pokemonType2.className = "tagType";
 
-    for(let j=0; j<data[i].type[j].length; j++){
-        if(data[i].type[0] || data[i].type[1]=== 'Fire'){
+    for(let j=0; j<data[i].type.length; j++){
+        if(data[i].type[0] === 'Fire'){
       pokemonType1.style.backgroundColor = "#F05030";
     }else if(data[i].type[0] === 'Bug'){
       pokemonType1.style.backgroundColor = "#A8B820";
@@ -95,44 +95,8 @@ function createCard(data){
       pokemonType1.style.backgroundColor = "#B058A0";
     }else if(data[i].type[0] === 'Flying'){
       pokemonType1.style.backgroundColor = "#98A8F0";
-    }else if(data[i].type[1]==="Fire"){
-      
-      pokemonType2.style.backgroundColor = "#F05030";
-      //columnType2.appendChild(pokemonType2);
-      //rowType.appendChild(columnType2);
-    }else if(data[i].type[1] === 'Bug'){     
-      pokemonType2.style.backgroundColor = "#A8B820";
-    }else if(data[i].type[1] === 'Water'){     
-      pokemonType2.style.backgroundColor = "#3899F8";
-    }else if(data[i].type[1] === 'Dragon'){      
-      pokemonType2.style.backgroundColor = "#7860E0";
-    }else if(data[i].type[1] === 'Electric'){      
-      pokemonType2.style.backgroundColor = "#F8D030";
-    }else if(data[i].type[1] === 'Ghost'){      
-      pokemonType2.style.backgroundColor = "#6060B0";
-    }else if(data[i].type[1] === 'Ice'){      
-      pokemonType2.style.backgroundColor = "#58C8E0";
-    }else if(data[i].type[1] === 'Fighting'){     
-      pokemonType2.style.backgroundColor = "#A05038";
-    }else if(data[i].type[1] === 'Normal'){      
-      pokemonType2.style.backgroundColor = "#A8A090";
-    }else if(data[i].type[1] === 'Grass'){     
-      pokemonType2.style.backgroundColor = "#2AD029";
-    }else if(data[i].type[1] === 'Psychic'){   
-      pokemonType2.style.backgroundColor = "#F870A0";    
-    }else if(data[i].type[1] === 'Rock'){     
-      pokemonType2.style.backgroundColor = "#B8A058";      
-    }else if(data[i].type[1] === 'Ground'){
-      pokemonType2.style.backgroundColor = "#F7DE3F";
-    }else if(data[i].type[1] === 'Poison'){
-      pokemonType2.style.backgroundColor = "#B058A0";
-    }else if(data[i].type[1] === 'Flying'){
-      pokemonType2.style.backgroundColor = "#98A8F0";
-    }else{
-      columnType2.removeChild();
     }
-
-      }
+  }
     
 
     let btnMoreInfo = document.createElement("button");
