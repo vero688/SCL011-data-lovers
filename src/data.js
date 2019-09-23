@@ -1,4 +1,3 @@
-
 const pokemonList = window.POKEMON.pokemon;
 window.pokemonList = pokemonList;
 
