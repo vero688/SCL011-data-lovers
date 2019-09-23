@@ -265,7 +265,7 @@ function showByType()
   createCard(filterResult);
   
   }
- 
+ //
   const weaknessType = document.getElementById("filterWeakness");
   weaknessType.addEventListener("change",showByWeaknees);
   
