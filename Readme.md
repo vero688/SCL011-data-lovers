@@ -27,6 +27,16 @@ Con la encuesta pudimos saber que necesita realmente nuestro usuario con respect
 * Cómo preferirías ver los datos; por medio de porcentaje y números 
 * Qué datos encontrarías más relevantes/interesantes de Pokemon: porcentaje de x km para encontrar un huevo.
 https://docs.google.com/document/d/18MEn7CHKsDDANs8ohbAjwCOm8OWZhHLkSPqkzmXJkfU/edit
+
+
+ **Historia de Usurios**
+ Con las historias de usuario las personas entendieron de que se trataba la pagina que era cada funcion que tenia lo que si el mapa no lo entendieron y es costo salirdel mapa por lo menos, al buscar lo pokemon fue facil y dijeron que era un pagina limpia para ver y usar.
+
+* Primera historia de usuario con adulto:
+https://www.youtube.com/watch?v=Q8c367cobLk
+* Segunda prueba de usuario con un menor de 9 años:
+https://www.youtube.com/watch?v=fHIouv5hzqE
+
 ## Diseño 
 **Prototipado de baja fidelidad** 
 El primer diseño fue en una hoja, donde se veía su  diseño y forma de para como poder  crear  la página en base a los datos sacados por los usuarios.
