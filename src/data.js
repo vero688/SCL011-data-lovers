@@ -84,8 +84,8 @@ window.filterEggs = filterEggs;
       orderSelector = pokemonList.sort((a,b) => {
         return a.name.localeCompare(b.name);
       })}
-    else (selectOrd === "alphaDesc"){
-      orderSelector = pokemonList.sort((a,b)=>{
+    else (selectOrd === "alphaDesc");{
+      orderSelector = pokemonList.sort((a,b) => {
       return b.name.localeCompare(a.name);
         })}
         
@@ -99,6 +99,7 @@ window.filterEggs = filterEggs;
       const filterEggs = (pokemonList,EggsOr) =>{
 
         let filterEggs = "";
+
         if (EggsOr === "2 km"){
           filterEggs= pokemonList.sort((a,b) =>{
             return (a.id -b.id);
@@ -111,10 +112,11 @@ window.filterEggs = filterEggs;
               filterEggs= pokemonList.sort((a,b) =>{
                 return a.name.localeCompare(b.name);
               })}
-              else if (EggsOr === "Not in Eggs"){
+              else  (EggsOr === "Not in Eggs");{
                 filterEggs= pokemonList.sort((a,b) =>{
                   return b.name.localeCompare(a.name);
                 })}
                 return filterEggs;
       }
       window.filterEggs = filterEggs; 
+      
