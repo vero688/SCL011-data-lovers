@@ -263,7 +263,7 @@ function showByType()
   //filterResult.name filterResult.img filterResult.number filterResult.type
   createCard(filterResult);
   }
- 
+ //
   const weaknessType = document.getElementById("filterWeakness");
   weaknessType.addEventListener("change",showByWeaknees);
   

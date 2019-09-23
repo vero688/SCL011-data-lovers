@@ -2,7 +2,8 @@
 ![](http://127.0.0.1:5500/src/img/title1440x400.png)
 
 
-Pokemon guia es una aplicación para jugadores que quieres saber de tips y información de los datos más relevantes de los pokemones, basada en la primera generación de Pokémon, o también conocidos como los 151 Pokémon de la región de Kanto 
+Pokemon guia es una aplicación para jugadores que quieres saber de tips y información de los datos más relevantes de los pokemones, basada en la primera generación de Pokémon, o también conocidos como los 151 Pokémon de la región de Kanto.
+Aqui podran ver los 151 pokemon con su descripciones (tipos, debilidades, evolucion, si tiene huevo), coo tambien el porcentaje de su caracteristicas ya sea si tiene huevo y cual es la probabilidad que salga, tambien se encontrara un mapa en la parte de arriba y contacto para enviarle la informacion algun amigo o conocido atravez de whatsApp tambien te muestra un mapa de la region de kanto en la cual podras verlo y sentirte como si estubieras en la region de kanto .
 
 *****
 
@@ -25,7 +26,7 @@ Con la encuesta pudimos saber que necesita realmente nuestro usuario con respect
 * Qué información te parece más relevante de un pokemon: El % de probabilidad de que aparezca (la hora frecuente y su % de aparición) y si tiene evolución o no 
 * Cómo preferirías ver los datos; por medio de porcentaje y números 
 * Qué datos encontrarías más relevantes/interesantes de Pokemon: porcentaje de x km para encontrar un huevo.
-
+https://docs.google.com/document/d/18MEn7CHKsDDANs8ohbAjwCOm8OWZhHLkSPqkzmXJkfU/edit
 ## Diseño 
 **Prototipado de baja fidelidad** 
 El primer diseño fue en una hoja, donde se veía su  diseño y forma de para como poder  crear  la página en base a los datos sacados por los usuarios.
@@ -37,7 +38,7 @@ Con este prototipo pasamos a uno más armado y programado,
 https://web.whatsapp.com/#
 
 **Paleta de colores**
-colores que se usaron en la pagina de pokemon 
+Para nuestra aplicacion usamos una paleta de colores mas pequeñas y con colores especificos como el blanco que nos permite que se vea limia la aplicacion y se destaque sus contenidos, como las tarjetas de cada pokemon,usamos tambien un verde que destaque el moal al abrirlo y permita ver al pokemon y su informacion que contiene, en los select pusimos una mescla de dos colores que son un azul claro con un degrades a verde que tambien es claro que nos ayuda que los select se destanquen y se vean acorde con la imagen de la aplicacion.
 
  https://docs.google.com/document/d/1Me3C20Ft68Ck_PcJIMVqPUwHz1AV7_Q-1M1zyM7phd8/edit
 
