@@ -66,7 +66,7 @@ https://drive.google.com/file/d/1bxSGDYKnv87m-LtvjsCryb76Eu0BasuP/view?usp=shari
 **Herramientas**
 
 * balsamiq
-* trello
+* trello  https://trello.com/b/5hLSbg5F/laboratoria
 * github
 * figma
 * formulario google 
